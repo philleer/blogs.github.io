@@ -1,7 +1,3 @@
-## Hello world
+## Articles list
 
-Hello everyone, here is my own blog web-page.
-
-```
-			        Copyright @philleer 2020. All rights reserved.
-```
+Hello, welcome to my blog. Here is my personal github blog.
