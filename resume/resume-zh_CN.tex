@@ -1,0 +1,85 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{李鹏辉}
+
+% {E-mail}{mobilephone}{homepage}
+\contactInfo{(+86)195-3894-2063}{phillee2016@163.com}{https://github.com/philleer}{}
+
+\baseInfo{广东省深圳市}{算法工程师}{}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{哈尔滨工业大学（深圳）} \textit{工学硕士} \hspace{\stretch{0.52}}控制科学与技术（机器视觉实验室）}{2017.9 - 2020.6}
+\datedsubsection{\textbf{吉林大学} \hspace{\stretch{5.3}}\textit{工学学士} \hspace{\fill}测控技术与仪器（NIR光谱分析LAB）}{2013.9 - 2017.6}
+
+\vspace{0.5em}
+
+\section{专业技能}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{编程语言}: C/C++, Python, Shell
+  \item \textbf{操作系统,项目工程构建}: Linux/macOS/Git/CMake
+  \item \textbf{关键词}: VR/3D Reconstruction/Image Processing
+\end{itemize}
+
+
+\section{工作经历}
+\datedsubsection{\textbf{深圳市铂岩科技有限公司 | RayShaper}, 六自由度姿态估计项目组-算法工程师}{2020.07-至今}
+\begin{itemize}
+  \item \textbf{密集多人场景人脸识别与跟踪。}
+  \item 独立负责车站地图开发(React),通过HTML5 本地存储及JSBridge实现在阿里全系应用中发布上线
+  \item 独立负责BU SPM chrome插件开发,支付成功/订单详情等页面的开发与交叉营销的接入工作
+\end{itemize}
+
+\begin{itemize}
+  \item \textbf{超高清8K全景视频360度拼接。}第一个课题是基于香农熵和人群出行模式，构建城市网格与用户矩阵分析城市多样性/流动性分布；可视分析平台前端与可视化基于D3/Vue/Express开发，数据分析与存储采用Python/MySQL/MongoDB技术，为了均衡大数据情况下的页面可视化渲染消耗用canvas替代svg。第二个课题是对海量商场定位数据做人群分类与可视化查询，依据该系统撰写的论文被CIKM 2016(DAVA Workshop)录用，并收录于中科院软件所年会成果集
+  \item 负责数据科学部HQ LAB的可视化原型开发，主导 TalkingMind 平台系统设计与前端开发
+\end{itemize}
+
+\begin{itemize}
+  \item \textbf{子弹时间自由视角合成。}与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
+  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+\end{itemize}
+
+\datedsubsection{\textbf{浙江商汤科技开发有限公司 | SenseTime}, 三维视觉与增强现实组-实习生}{2019.06-2019.09}
+\begin{itemize}
+  \item \textbf{基于RGBD的动态实时稠密人体表面三维重建。}第一个课题是基于香农熵和人群出行模式，构建城市网格与用户矩阵分析城市多样性/流动性分布；可视分析平台前端与可视化基于D3/Vue/Express开发，数据分析与存储采用Python/MySQL/MongoDB技术，为了均衡大数据情况下的页面可视化渲染消耗用canvas替代svg。第二个课题是对海量商场定位数据做人群分类与可视化查询，依据该系统撰写的论文被CIKM 2016(DAVA Workshop)录用，并收录于中科院软件所年会成果集
+  \item 负责数据科学部HQ LAB的可视化原型开发，主导 TalkingMind 平台系统设计与前端开发
+\end{itemize}
+
+\section{其他项目经历}
+\datedsubsection{\textbf{融合明暗信息的多视图立体重建算法研究}, 硕士毕业课题}{2018.11-2019.09}
+\begin{itemize}
+  \item 与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
+  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+\end{itemize}
+\datedsubsection{\textbf{高精度亚像素边缘检测算法研究}, 硕士实验室项目}{2018.09-2018.11}
+\begin{itemize}
+  \item 与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
+  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+\end{itemize}
+
+% \begin{onehalfspacing}
+% \end{onehalfspacing}
+
+\section{个人总结}
+\begin{itemize}
+  \item [>] 技术博客：https://cnblogs.com/phillee
+  \item [>] 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
