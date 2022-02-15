@@ -24,7 +24,7 @@ ${OUTPUT_DIR}:
 
 all:	${OUTPUT_DIR} clean pdf
 
-en: clean xelatex resume.tex
+en: 	clean xelatex resume.tex
 
 zh_CN:	clean xelatex resume-zh_CN.tex
 
@@ -33,13 +33,12 @@ pdf:	clean $(PDFS)
 %.pdf:  %.tex
 	xelatex -output-directory=${OUTPUT_DIR} $<
 
-ifeq ($(OS),Windows_NT)
-  # on Windows
+ifeq ($(OS),Windows_NT) # on Windows
   RM = cmd //C del
-else
-  # on Unix/Linux
+else # on Unix/Linux
   RM = rm -f
 endif
 
 clean:
 	$(RM) ${TMP_FILES} ${RESULTS}
+	$(RM) *.log *.aux *.bbl *.blg *.synctex.gz *.out *.toc *.lof *.idx *.ilg *.ind *.pdf

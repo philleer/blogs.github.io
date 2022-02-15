@@ -28,7 +28,7 @@
 \section{专业技能}
 \begin{itemize}[parsep=0.5ex]
   \item \textbf{编程语言}: C/C++, Python, Shell
-  \item \textbf{操作系统,项目工程构建}: Linux/macOS/Git/CMake
+  \item \textbf{操作系统,项目工程构建}: Linux/macOS/SSH/Git/CMake
   \item \textbf{关键词}: VR/3D Reconstruction/Image Processing
 \end{itemize}
 
@@ -37,45 +37,48 @@
 \datedsubsection{\textbf{深圳市铂岩科技有限公司 | RayShaper}, 六自由度姿态估计项目组-算法工程师}{2020.07-至今}
 \begin{itemize}
   \item \textbf{密集多人场景人脸识别与跟踪。}
-  \item 独立负责车站地图开发(React),通过HTML5 本地存储及JSBridge实现在阿里全系应用中发布上线
-  \item 独立负责BU SPM chrome插件开发,支付成功/订单详情等页面的开发与交叉营销的接入工作
+  \item 独立负责基于开源人脸库的识别和动态追踪，减少误检和漏检的出现。
+  \item 独立负责基于多目标检测的人脸识别与跟踪的进一步优化。对跨镜头场景下算法的改进和完善。
 \end{itemize}
 
 \begin{itemize}
-  \item \textbf{超高清8K全景视频360度拼接。}第一个课题是基于香农熵和人群出行模式，构建城市网格与用户矩阵分析城市多样性/流动性分布；可视分析平台前端与可视化基于D3/Vue/Express开发，数据分析与存储采用Python/MySQL/MongoDB技术，为了均衡大数据情况下的页面可视化渲染消耗用canvas替代svg。第二个课题是对海量商场定位数据做人群分类与可视化查询，依据该系统撰写的论文被CIKM 2016(DAVA Workshop)录用，并收录于中科院软件所年会成果集
-  \item 负责数据科学部HQ LAB的可视化原型开发，主导 TalkingMind 平台系统设计与前端开发
+  \item \textbf{超高清8K全景视频360度拼接。}采集四源鱼眼视频，在线完成超高清8K全景视频的360拼接，并在VR头显中展示结果。
+  \item 独立负责鱼眼镜头标定算法的优化。
+  \item 独立负责对基于光流的全景拼接算法的GPU实现进行优化，提升了大约20\%的性能。
+  \item 负责基于FFMpeg的实时拼接算法的优化。
 \end{itemize}
 
 \begin{itemize}
-  \item \textbf{子弹时间自由视角合成。}与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
-  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+  \item \textbf{子弹时间自由视角合成。}基于稀疏视角的彩色图像完成同一水平面任意虚拟视角的合成，以在保证视频质量的前提下减少现场所需摄像机数量。独立完成项目初期的基础工程框架构建与调试。
+  \item 负责实现基于平面拟合和纹理因子约束的单视角深度补全。
+  \item 负责完成空间相机姿态的平滑插值算法。
+  \item 负责完成基于多视角三维空间映射与反向映射的新视角图像融合。
+  \item 负责完成对融合后彩色图像的修复和优化。
 \end{itemize}
 
 \datedsubsection{\textbf{浙江商汤科技开发有限公司 | SenseTime}, 三维视觉与增强现实组-实习生}{2019.06-2019.09}
 \begin{itemize}
-  \item \textbf{基于RGBD的动态实时稠密人体表面三维重建。}第一个课题是基于香农熵和人群出行模式，构建城市网格与用户矩阵分析城市多样性/流动性分布；可视分析平台前端与可视化基于D3/Vue/Express开发，数据分析与存储采用Python/MySQL/MongoDB技术，为了均衡大数据情况下的页面可视化渲染消耗用canvas替代svg。第二个课题是对海量商场定位数据做人群分类与可视化查询，依据该系统撰写的论文被CIKM 2016(DAVA Workshop)录用，并收录于中科院软件所年会成果集
-  \item 负责数据科学部HQ LAB的可视化原型开发，主导 TalkingMind 平台系统设计与前端开发
+  \item \textbf{基于RGBD的动态实时稠密人体表面三维重建。}利用RGBD信息实现人体表面实时动态三维稠密重建，进而支持虚拟/增强现实等三维交互功能。主要负责实现单帧多视角深度图TSDF融合及优化。
+  \item 负责实现与参考帧空间的空间体素融合，有效解决了动作幅度过大时的跟踪问题。
+  \item 与平台研发协作实现基于栅格化的深度图填充，改善了单视角深度的稀疏性。
 \end{itemize}
 
 \section{其他项目经历}
 \datedsubsection{\textbf{融合明暗信息的多视图立体重建算法研究}, 硕士毕业课题}{2018.11-2019.09}
 \begin{itemize}
-  \item 与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
-  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+  \item 独立完成基于超像素分割的平面拟合，有效提升了单视角深度图的稠密性。
+  \item 独立完成联合多视图立体和环境光照明暗信息的深度优化，进而提高了弱纹理区域重建完整度。
 \end{itemize}
 \datedsubsection{\textbf{高精度亚像素边缘检测算法研究}, 硕士实验室项目}{2018.09-2018.11}
 \begin{itemize}
-  \item 与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
-  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+  \item 负责完成边缘向量函数设计及像素级边缘点位置的确定。
+  \item 针对工业环境利用Steger方法完成高精度亚像素位置检测算法。
 \end{itemize}
-
-% \begin{onehalfspacing}
-% \end{onehalfspacing}
 
 \section{个人总结}
 \begin{itemize}
   \item [>] 技术博客：https://cnblogs.com/phillee
-  \item [>] 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+  \item [>] 本人勤奋刻苦、乐观进取，自驱力强、保持热忱，工作负责、善于沟通，认同开放、连接、融合的三维视觉技术在未来的巨大潜力。在学习和工作中不断打磨技术基础，丰富技术栈，并时刻关注相关研究，对基于3D视觉技术的工程化解决方案有浓厚兴趣。
 \end{itemize}
 
 %% Reference
