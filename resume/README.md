@@ -24,6 +24,9 @@ Copyrighted fonts are not subjected to this License.
 ### 四、参考资料
 
 [1] [hijiangtao/resume](https://github.com/hijiangtao/resume.git)
+
 [2] [JianXu's CV](http://www.jianxu.net/en/files/JianXu_CV.pdf)
+
 [3] [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html)
+
 [4] [How to write a LaTeX class file and design your own CV (Part 2) - ShareLaTeX](https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 
