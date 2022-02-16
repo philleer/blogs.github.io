@@ -13,7 +13,7 @@
 
 编译出的效果可以参考preview目录下的PNG/PDF格式。
 
-![resume-zh_CN.png](./resume.preview.png)
+<!-- ![resume-zh_CN.png](./resume.preview.png) -->
 
 ### 三、开源声明 License
 
