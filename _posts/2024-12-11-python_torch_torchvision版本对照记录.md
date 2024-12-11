@@ -2,7 +2,8 @@
 
 ### 本文目录
 
-[TOC]
+1. TOC
+{:toc}
 
 ### 一、torchvision与torch版本对应以及对python版本的要求
 
