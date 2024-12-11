@@ -63,3 +63,12 @@
 [2] [audio兼容版本https://pytorch.org/audio/main/installation.html#compatibility-matrix](https://pytorch.org/audio/main/installation.html#compatibility-matrix)
 
 [3] [conda安装时不同版本的指令指南https://pytorch.org/get-started/previous-versions/](https://pytorch.org/get-started/previous-versions/)
+
+（全文完）
+
+---
+
+> **本文作者**  ：phillee
+> **发表日期**  ：2024年12月11日
+> **版权声明**  ：自由转载-非商用-非衍生-保持署名（[创意共享3.0许可协议](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)/[CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)）。转载请注明出处！
+> 限于本人水平，如果文章和代码有表述不当之处，还请不吝赐教。
