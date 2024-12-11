@@ -1,3 +1,5 @@
+# MY RESUME
+
 ### 一、项目说明
 
 **`LaTeX`**格式简历模板，源码文件为目录下的`resume-zh_CN.tex`。需要使用**`XeLaTeX`**编译。
