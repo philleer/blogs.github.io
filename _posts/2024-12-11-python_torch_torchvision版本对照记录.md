@@ -1,9 +1,8 @@
 # Python-Torch-Torchvision版本对照记录
 
-本文目录：
+### 本文目录
 
-1. TOC
-{:toc}
+[TOC]
 
 ### 一、torchvision与torch版本对应以及对python版本的要求
 
@@ -59,5 +58,7 @@
 ### 四、参考资料
 
 [1] [vision官方网站https://github.com/pytorch/vision#installation](https://github.com/pytorch/vision#installation)
+
 [2] [audio兼容版本https://pytorch.org/audio/main/installation.html#compatibility-matrix](https://pytorch.org/audio/main/installation.html#compatibility-matrix)
+
 [3] [conda安装时不同版本的指令指南https://pytorch.org/get-started/previous-versions/](https://pytorch.org/get-started/previous-versions/)
