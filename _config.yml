@@ -41,15 +41,3 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
-
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:title/
-
-permalink: /:path/:basename
-
-include:
-  - resume
-exclude:
-  - SECURITY.md
