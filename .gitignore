@@ -7,3 +7,10 @@ _site
 .jekyll-metadata
 vendor
 _notebooks/.ipynb_checkpoints
+
+# Keep personal resume source out of the public repo
+resume/resume-zh_CN.tex
+resume/*.pdf
+resume/*.aux
+resume/*.synctex.gz
+resume/preview/
