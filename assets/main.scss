@@ -331,6 +331,11 @@ body.shell .about h2:first-child {
   margin-top: 0;
 }
 
+html[lang="en"] body.shell .about h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 body.shell .about p {
   margin: 0 0 10px;
   font-size: 14px;
