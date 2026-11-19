@@ -7,32 +7,32 @@ layout: default
 
   <h2 data-zh="Projects" data-en="Projects">Projects</h2>
   <div class="project">
-    <h3><a href="https://github.com/{{ site.github_username }}/blogs.github.io">blogs.github.io</a></h3>
+    <h3><a href="https://github.com/{{ site.github_username }}/blogs.github.io" target="_blank" rel="noopener noreferrer">blogs.github.io</a></h3>
     <p data-zh="用 Jekyll 写的个人博客。" data-en="Personal blog built with Jekyll.">用 Jekyll 写的个人博客。</p>
   </div>
   <div class="project">
-    <h3><a href="https://github.com/{{ site.github_username }}/blogs.github.io/tree/master/resume">Resume</a></h3>
+    <h3><a href="https://github.com/{{ site.github_username }}/blogs.github.io/tree/master/resume" target="_blank" rel="noopener noreferrer">Resume</a></h3>
     <p data-zh="仓库里的 LaTeX 简历。" data-en="LaTeX resume in this repository.">仓库里的 LaTeX 简历。</p>
   </div>
 
   <h2 data-zh="Contact" data-en="Contact">Contact</h2>
   <ul class="contact-list">
     <li>
-      <a href="https://github.com/{{ site.github_username }}">{% include icons.html name="github" %}<span>GITHUB</span></a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">{% include icons.html name="github" %}<span>GITHUB</span></a>
     </li>
     {% if site.x_url %}
     <li>
-      <a href="{{ site.x_url }}">{% include icons.html name="x" %}<span>X</span></a>
+      <a href="{{ site.x_url }}" target="_blank" rel="noopener noreferrer">{% include icons.html name="x" %}<span>X</span></a>
     </li>
     {% endif %}
     {% if site.cnblogs_url %}
     <li>
-      <a href="{{ site.cnblogs_url }}">{% include icons.html name="cnblogs" %}<span>CNBLOGS</span></a>
+      <a href="{{ site.cnblogs_url }}" target="_blank" rel="noopener noreferrer">{% include icons.html name="cnblogs" %}<span>CNBLOGS</span></a>
     </li>
     {% endif %}
     {% if site.email %}
     <li>
-      <a href="mailto:{{ site.email }}">{% include icons.html name="email" %}<span>EMAIL</span></a>
+      <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">{% include icons.html name="email" %}<span>EMAIL</span></a>
     </li>
     {% endif %}
   </ul>

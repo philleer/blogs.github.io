@@ -104,27 +104,30 @@ body.shell .band {
 
 body.shell .brand {
   justify-self: start;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
 }
 
 body.shell .nav {
   justify-self: center;
   display: flex;
-  gap: 2px;
-  font-size: 13px;
+  gap: 4px;
 }
 
 body.shell .nav a {
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 6px;
   color: #6b6760;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 body.shell .nav a.is-active {
   background: #e8f2ef;
   color: #1f5c4d;
-  font-weight: 600;
 }
 
 body.shell .tools {

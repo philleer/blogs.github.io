@@ -38,6 +38,36 @@
         }
         apply(lang);
       })();
+      (function () {
+        function markExternal(root) {
+          var links = root.querySelectorAll("a[href]");
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            var href = link.getAttribute("href");
+            if (!href || href.charAt(0) === "#" || href.indexOf("javascript:") === 0) continue;
+            var leave = href.indexOf("mailto:") === 0 || href.indexOf("tel:") === 0;
+            if (!leave) {
+              try {
+                var url = new URL(link.href, window.location.href);
+                leave = (url.protocol === "http:" || url.protocol === "https:") && url.origin !== window.location.origin;
+              } catch (e) {
+                leave = false;
+              }
+            }
+            if (!leave) continue;
+            link.target = "_blank";
+            var rel = link.getAttribute("rel") || "";
+            if (rel.indexOf("noopener") === -1) rel = (rel + " noopener").replace(/^\s+/, "");
+            if (rel.indexOf("noreferrer") === -1) rel = (rel + " noreferrer").replace(/^\s+/, "");
+            link.setAttribute("rel", rel);
+          }
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", function () { markExternal(document); });
+        } else {
+          markExternal(document);
+        }
+      })();
     </script>
   </body>
 </html>
