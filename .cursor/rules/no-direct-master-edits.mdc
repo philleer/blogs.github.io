@@ -1,0 +1,31 @@
+---
+description: Never edit or commit directly on master; move work to a new branch first
+alwaysApply: true
+---
+
+# Do not change master directly
+
+`master` is not a working branch. Do not edit files, stage, or commit while `HEAD` is `master`.
+
+Before any edit or commit, check the current branch.
+
+## Already on another branch
+
+Stay there. Commit on that branch.
+
+## Currently on master, with uncommitted changes
+
+1. `git stash push -m "<why>"`
+2. Create and switch to a new branch. Do not reuse `master`.
+3. `git stash pop`
+4. Commit on the new branch.
+
+## Currently on master, before starting edits
+
+Create and switch to a new branch first, then edit and commit there. Do not stash an empty tree.
+
+## After the commit
+
+Leave the work on the new branch. Do not merge it into `master`, and do not open a merge request, unless the user explicitly asks.
+
+If they ask to land it, either merge that branch into `master`, or push the branch and let them open the merge request by hand. Do not push or merge on your own.
