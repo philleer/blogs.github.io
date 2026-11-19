@@ -1,11 +1,59 @@
 ---
 layout: default
 ---
-<ul class="blog-list">
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-  </li>
+{% assign cats = "学习|思考|生活" | split: "|" %}
+<nav class="blog-cats" aria-label="文章分类">
+  <button type="button" class="is-active" data-cat="all" aria-pressed="true">全部</button>
+  {% for cat in cats %}
+  <button type="button" data-cat="{{ cat }}" aria-pressed="false">{{ cat }}</button>
   {% endfor %}
-</ul>
+</nav>
+<div class="blog-groups">
+  {% for cat in cats %}
+    {% assign items = site.posts | where: "category", cat %}
+    {% if items.size > 0 %}
+    <section class="blog-group" data-cat="{{ cat }}">
+      <h2>{{ cat }} <span>{{ items.size }}</span></h2>
+      <ul class="blog-list">
+        {% for post in items %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  {% endfor %}
+</div>
+<p class="blog-empty" hidden>还没有这一类文章。</p>
+<script>
+  (function () {
+    var bar = document.querySelector(".blog-cats");
+    if (!bar) return;
+    var buttons = bar.querySelectorAll("button");
+    var groups = document.querySelectorAll(".blog-group");
+    var empty = document.querySelector(".blog-empty");
+
+    function show(cat) {
+      var visible = 0;
+      for (var i = 0; i < buttons.length; i++) {
+        var on = buttons[i].getAttribute("data-cat") === cat;
+        buttons[i].classList.toggle("is-active", on);
+        buttons[i].setAttribute("aria-pressed", on ? "true" : "false");
+      }
+      for (var j = 0; j < groups.length; j++) {
+        var match = cat === "all" || groups[j].getAttribute("data-cat") === cat;
+        groups[j].hidden = !match;
+        if (match) visible += 1;
+      }
+      if (empty) empty.hidden = visible > 0;
+    }
+
+    bar.addEventListener("click", function (event) {
+      var button = event.target.closest("button");
+      if (!button || !bar.contains(button)) return;
+      show(button.getAttribute("data-cat"));
+    });
+  })();
+</script>

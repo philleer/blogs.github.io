@@ -192,6 +192,49 @@ body.shell .bottombar {
   font-size: 12px;
 }
 
+body.shell .blog-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 0 0 8px;
+}
+
+body.shell .blog-cats button {
+  border: 0;
+  background: none;
+  padding: 4px 8px;
+  color: #6b6760;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+body.shell .blog-cats button.is-active {
+  color: #1f5c4d;
+  font-weight: 700;
+}
+
+body.shell .blog-group h2 {
+  margin: 22px 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+body.shell .blog-group h2 span {
+  margin-left: 6px;
+  color: #6b6760;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+body.shell .blog-empty {
+  margin: 18px 0 0;
+  color: #6b6760;
+  font-size: 14px;
+}
+
 body.shell .blog-list {
   list-style: none;
   margin: 0;

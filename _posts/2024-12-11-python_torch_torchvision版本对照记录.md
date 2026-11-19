@@ -1,3 +1,6 @@
+---
+category: 学习
+---
 # Python-Torch-Torchvision版本对照记录
 
 **本文目录**
