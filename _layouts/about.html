@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article class="about">
+  <h2 data-zh="About Me" data-en="About Me">About Me</h2>
+  <p data-zh="个人技术博客，记录开发过程中的笔记和较长的文章。" data-en="A personal technology blog for longer articles and shorter notes.">个人技术博客，记录开发过程中的笔记和较长的文章。</p>
+
+  <h2 data-zh="Projects" data-en="Projects">Projects</h2>
+  <div class="project">
+    <h3><a href="https://github.com/{{ site.github_username }}/blogs.github.io">blogs.github.io</a></h3>
+    <p data-zh="用 Jekyll 写的个人博客。" data-en="Personal blog built with Jekyll.">用 Jekyll 写的个人博客。</p>
+  </div>
+  <div class="project">
+    <h3><a href="https://github.com/{{ site.github_username }}/blogs.github.io/tree/master/resume">Resume</a></h3>
+    <p data-zh="仓库里的 LaTeX 简历。" data-en="LaTeX resume in this repository.">仓库里的 LaTeX 简历。</p>
+  </div>
+
+  <h2 data-zh="Contact" data-en="Contact">Contact</h2>
+  <ul class="contact-list">
+    <li>
+      <a href="https://github.com/{{ site.github_username }}">{% include icons.html name="github" %}<span>GITHUB</span></a>
+    </li>
+    {% if site.x_url %}
+    <li>
+      <a href="{{ site.x_url }}">{% include icons.html name="x" %}<span>X</span></a>
+    </li>
+    {% endif %}
+    {% if site.cnblogs_url %}
+    <li>
+      <a href="{{ site.cnblogs_url }}">{% include icons.html name="cnblogs" %}<span>CNBLOGS</span></a>
+    </li>
+    {% endif %}
+    {% if site.email %}
+    <li>
+      <a href="mailto:{{ site.email }}">{% include icons.html name="email" %}<span>EMAIL</span></a>
+    </li>
+    {% endif %}
+  </ul>
+</article>

@@ -1,1 +1,4 @@
-## NEWEST ARTICLES
+---
+layout: home
+title: Blog
+---

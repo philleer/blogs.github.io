@@ -6,19 +6,42 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Technology blog
-description: ❤ Good luck! ❤
+title: Phillee
+description: Phillee
+author: Phillee
+lang: zh-CN
+url: https://philleer.github.io
+baseurl: /blogs.github.io
 github_username: philleer
 
 # Email and twitter are optional:
 email: phillee2016@163.com
-twitter_username:
+twitter_username:ph89915
+x_url:https://x.com/ph89915
+cnblogs_url: https://www.cnblogs.com/phillee
 
 # Set this to true to get LaTeX math equation support
 use_math: true
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
 
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: minima

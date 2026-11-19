@@ -1,0 +1,24 @@
+{% if page.layout == "notes" or page.layout == "note" %}
+  {% assign nav = "notes" %}
+{% elsif page.layout == "about" %}
+  {% assign nav = "about" %}
+{% else %}
+  {% assign nav = "blog" %}
+{% endif %}
+<header class="topbar">
+  <div class="band">
+    <a class="brand" href="{{ "/" | relative_url }}">Phillee</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="{{ "/" | relative_url }}"{% if nav == "blog" %} class="is-active" aria-current="page"{% endif %}>Blog</a>
+      <a href="{{ "/notes/" | relative_url }}"{% if nav == "notes" %} class="is-active" aria-current="page"{% endif %}>Notes</a>
+      <a href="{{ "/about/" | relative_url }}"{% if nav == "about" %} class="is-active" aria-current="page"{% endif %}>About</a>
+    </nav>
+    <div class="tools">
+      <a class="icon-link" href="https://github.com/{{ site.github_username }}" aria-label="GitHub">{% include icons.html name="github" %}</a>
+      {% if site.x_url %}
+      <a class="icon-link" href="{{ site.x_url }}" aria-label="X">{% include icons.html name="x" %}</a>
+      {% endif %}
+      <button type="button" class="lang-switch" aria-label="Switch language">EN</button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% if site.notes.size == 0 %}
+<p class="empty-notes" data-zh="还没有随笔。" data-en="No notes yet.">还没有随笔。</p>
+{% else %}
+<div class="note-list">
+  {% assign notes = site.notes | sort: "date" | reverse %}
+  {% for note in notes %}
+  <article class="note-card">
+    <div class="note-meta">
+      <span class="avatar" aria-hidden="true">P</span>
+      <span class="note-author">Phillee</span>
+      <span class="note-sep">·</span>
+      <time datetime="{{ note.date | date_to_xmlschema }}">{{ note.date | date: "%Y-%m-%d" }}</time>
+      {% if note.tag %}
+      <span class="note-sep">·</span>
+      <span class="note-tag"{% if note.tag_en %} data-zh="{{ note.tag }}" data-en="{{ note.tag_en }}"{% endif %}>{{ note.tag }}</span>
+      {% endif %}
+    </div>
+    <a class="note-excerpt" href="{{ note.url | relative_url }}">{{ note.excerpt | strip_html | truncate: 180 }}</a>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}

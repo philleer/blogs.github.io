@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  {%- include head.html -%}
+  <body class="shell">
+    {%- include header.html -%}
+    <div class="stage">
+      <main class="sheet">
+        {{ content }}
+      </main>
+    </div>
+    <footer class="bottombar">© All Rights Reserved 2026</footer>
+    <script>
+      (function () {
+        var key = "phillee-lang";
+        var lang = "zh";
+        try { lang = localStorage.getItem(key) || "zh"; } catch (e) {}
+        if (lang !== "en") lang = "zh";
+
+        function apply(next) {
+          lang = next;
+          document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+          var nodes = document.querySelectorAll("[data-zh]");
+          for (var i = 0; i < nodes.length; i++) {
+            nodes[i].textContent = nodes[i].getAttribute(lang === "zh" ? "data-zh" : "data-en");
+          }
+          var button = document.querySelector(".lang-switch");
+          if (button) {
+            button.textContent = lang === "zh" ? "EN" : "中";
+          }
+          try { localStorage.setItem(key, lang); } catch (e) {}
+        }
+
+        var button = document.querySelector(".lang-switch");
+        if (button) {
+          button.addEventListener("click", function () {
+            apply(lang === "zh" ? "en" : "zh");
+          });
+        }
+        apply(lang);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-# About
-
-## Description
-
-Technology Blog Homepage.
+---
+layout: about
+title: About
+permalink: /about/
+---
